@@ -1,0 +1,24 @@
+{
+  "name": "postcssInJs",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build:emotion": "node --experimental-modules --es-module-specifier-resolution=node ./src/emotion-to-css.js > ./build/emotion/index.css",
+    "postbuild:emotion": "postcss --use postcss-nested autoprefixer -o build/emotion/index.css build/emotion/index.css",
+    "build:jss": "node --experimental-modules --es-module-specifier-resolution=node ./src/jss-to-css.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/core": "^10.0.14",
+    "autoprefixer": "^9.6.1",
+    "emotion": "^10.0.14",
+    "jss": "^9.8.7",
+    "jss-preset-default": "^4.5.0",
+    "postcss-cli": "^6.1.3",
+    "postcss-nested": "^4.1.2",
+    "react": "^16.8.6"
+  }
+}

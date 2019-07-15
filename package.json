@@ -9,8 +9,8 @@
     "build:jss": "node --experimental-modules --es-module-specifier-resolution=node ./src/jss-to-css.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Guilherme M Gregio <guilherme@gregio.net>",
+  "license": "MIT",
   "dependencies": {
     "@emotion/core": "^10.0.14",
     "autoprefixer": "^9.6.1",
